@@ -12,15 +12,15 @@
           $myname = "Jim Feeley";
 
             if ($myage > 21 ){
-            print $myname + "-" + "You are able to buy specs, mugs and sr";
+            print $myname . "-" . "You are able to buy specs, mugs and sr";
             }
 
             else if($myage >18 && $myage <21){
-            print $myname + "-" +"You are able to buy specs, and mugs.";
+            print $myname . "-" ."You are able to buy specs, and mugs.";
             }
 
             else if ($myage >16 && $myage <18){
-          print $myname + "-" +"You can buy specs";
+          print $myname . "-" ."You can buy specs";
           }
           else {print "You can buy nothing";}
 
