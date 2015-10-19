@@ -25,7 +25,7 @@
           }
           else {print "You can buy nothing";} */
 
-          $wantedgoods = "specs";
+          $wantedgoods = "Jimfeeley";
 
           switch ($wantedgoods) {
               case "mugs";
