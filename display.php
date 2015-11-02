@@ -9,5 +9,5 @@ if ($username =="Luke" && $password =="1104983") {
     echo "Hi " . $username . ", login was successful.";
 }
     else {
-        echo "Login was unsuccessful, User " . $username . " Not Recognised";
+        echo "Login was unsuccessful, User '" . $username . "'not recognised";
     }
