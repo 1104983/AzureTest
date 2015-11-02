@@ -5,7 +5,7 @@
     <title>Deployment Test</title>
 </head>
 <body>
-<form action="display.php" method="post">
+<form action="index.php" method="post">
 
 <label>Username: </label>
 
@@ -18,6 +18,16 @@
 
 <br>
 <input type="submit" value ="submit">
-    </form>
+</form>
+if ($username =="Luke" && $password =="1104983") {
+
+setcookie('access_level','standarduser');
+setcookie('username',$username);
+
+echo "Hi " . $username . ", login was successful.";
+}
+else {
+echo "Login was unsuccessful, User '" . $username . "' not recognised";
+}
 </body>
 </html>
