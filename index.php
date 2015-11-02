@@ -5,7 +5,7 @@
     <title>Deployment Test</title>
 </head>
 <body>
-< action="display.php" method="post">
+<action="display.php" method="post">
 <label>Username: </label>
 <input type="text" name="Username">
 <br>
