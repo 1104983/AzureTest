@@ -31,7 +31,8 @@ setcookie('username',$username);
 echo "Hi " . $username . ", login was successful.";
 }
 else {
-echo "Login failed";
+    echo "Login failed";
+}
 
   ?>
 </body>
