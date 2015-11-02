@@ -19,6 +19,7 @@
 <br>
 <input type="submit" value ="submit">
 </form>
+<?php
 if ($username =="Luke" && $password =="1104983") {
 
 setcookie('access_level','standarduser');
@@ -29,5 +30,6 @@ echo "Hi " . $username . ", login was successful.";
 else {
 echo "Login was unsuccessful, User '" . $username . "' not recognised";
 }
+  ?>
 </body>
 </html>
