@@ -31,4 +31,4 @@ function displayAccessLevelInformation($accesslevel)
     }
 }
 ?>
-}
+
