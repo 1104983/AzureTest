@@ -1,8 +1,13 @@
 <?php
 
 
-$username = $_GET["Luke"];
-$password = $_GET["jimfeeley1"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 
-echo "success";
+if ($username =="Luke" && $password =="1104983") {
+    echo "Hi " + $username + " login was succesful";
+}
+    else {
+        echo "Login was unsuccesful";
+    }
