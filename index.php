@@ -10,6 +10,7 @@
 <input type="text" name="Username">
 <br>
 <label>Password: </label>
+<input type="password" name="Password">
 <br>
 <input type="submit" value ="submit">
 </form></body>
