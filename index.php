@@ -31,10 +31,10 @@ setcookie('username',$username);
 echo "Hi " . $username . ", login was successful.";
 }
 else if($username == "" && $password == ""){
-        echo "";
+        echo "Please login";
     }
 else{
-    echo "Login Failed";
+    echo "Login Failed '".$username. "'";
 }
   ?>
 </body>
