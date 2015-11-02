@@ -5,6 +5,7 @@ $password = $_POST["password"];
 $access_level = "standarduser";
 
 if ($username =="Luke" && $password =="1104983") {
+    displayAccessLevelInformation($_COOKIE['access_level']);
 
     setcookie('access_level',$access_level);
     setcookie('username',$username);
@@ -18,7 +19,7 @@ else{
     echo "Login Failed for user '".$username. "'";
 }
 
-displayAccessLevelInformation($_COOKIE['access_level']);
+
 
 
 function displayAccessLevelInformation($accesslevel)
