@@ -30,8 +30,11 @@ setcookie('username',$username);
 
 echo "Hi " . $username . ", login was successful.";
 }
-else {
-    echo "Login was unsuccessful, User '" . $username . "' not recognised";
+else if($username == "" && $password == ""){
+        echo "";
+    }
+else{
+    echo "Login Failed";
 }
   ?>
 </body>
