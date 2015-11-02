@@ -34,7 +34,7 @@ else if($username == "" && $password == ""){
         echo "Please login";
     }
 else{
-    echo "Login Failed '".$username. "'";
+    echo "Login Failed for user '".$username. "'";
 }
   ?>
 </body>
