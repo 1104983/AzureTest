@@ -20,6 +20,9 @@
 <input type="submit" value ="submit">
 </form>
 <?php
+$username = $_POST["username"];
+$password = $_POST["password"];
+
 if ($username =="Luke" && $password =="1104983") {
 
 setcookie('access_level','standarduser');
