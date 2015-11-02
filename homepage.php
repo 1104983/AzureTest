@@ -2,7 +2,7 @@
 <?php
 $username = $_POST["username"];
 $password = $_POST["password"];
-$access_level = "standarduser";
+$access_level = "root";
 
 if ($username =="Luke" && $password =="1104983") {
     displayAccessLevelInformation($_COOKIE['access_level']);
