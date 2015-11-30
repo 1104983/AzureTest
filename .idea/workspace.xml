@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e481e92-ffd6-4661-b397-d9d5cedea75d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signin.html" afterPath="$PROJECT_DIR$/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AzureTest.iws" />
@@ -61,10 +60,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6577181">
-              <caret line="261" column="56" selection-start-line="261" selection-start-column="56" selection-end-line="261" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.942953">
+              <caret line="286" column="13" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -238,12 +238,6 @@
       <created>1445258787587</created>
       <option name="number" value="Default" />
       <updated>1445258787587</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added in index.php">
-      <created>1445264344765</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1445264344765</updated>
     </task>
     <task id="LOCAL-00007" summary="added in index.php">
       <created>1445264386577</created>
@@ -533,7 +527,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448898397233</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added in index.php">
+      <created>1448898506903</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1448898506903</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,10 +636,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6577181">
-          <caret line="261" column="56" selection-start-line="261" selection-start-column="56" selection-end-line="261" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.942953">
+          <caret line="286" column="13" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

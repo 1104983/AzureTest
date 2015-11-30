@@ -259,18 +259,32 @@
             </div>
         </div>
     </div>
-    <a href="http://www.google.com" target="frame1" onclick="executeOnClick()">Google</a>
+    <a class="btn" id="openBtn" href="#">Open modal</a>
 
-    <script type="text/javascript">
-        function executeOnClick(){
+    <div tabindex="-1" class="modal hide fade" id="myModal" role="dialog">
+        <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal">×</button>
+            <h3>Dialog</h3>
+        </div>
+        <div class="modal-body">
+            <iframe width="99.6%" height="250" src="" frameborder="0" style="-ms-zoom: 0.6;"></iframe>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">OK</button>
+        </div>
+    </div>
+    <script>
+    var frameSrc = "/login";
 
-// add your logic here
+    $('#openBtn').click(function(){
+    $('#myModal').on('show', function () {
 
+    $('iframe').attr("src",frameSrc);
 
-            return true;
-        }
+    });
+    $('#myModal').modal({show:true})
+    });
     </script>
-
 
 </body>
 
