@@ -60,8 +60,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3914989">
-              <caret line="263" column="33" selection-start-line="263" selection-start-column="33" selection-end-line="263" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.6767338">
+              <caret line="278" column="30" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -238,12 +238,6 @@
       <created>1445258787587</created>
       <option name="number" value="Default" />
       <updated>1445258787587</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added in index.php">
-      <created>1445264445083</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1445264445083</updated>
     </task>
     <task id="LOCAL-00009" summary="added in index.php">
       <created>1445266191464</created>
@@ -533,7 +527,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448898712997</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="added in index.php">
+      <created>1448898976285</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1448898976285</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3914989">
-          <caret line="263" column="33" selection-start-line="263" selection-start-column="33" selection-end-line="263" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.6767338">
+          <caret line="278" column="30" selection-start-line="278" selection-start-column="30" selection-end-line="278" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
