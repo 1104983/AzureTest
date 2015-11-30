@@ -49,8 +49,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a class="cd-signin" href="loginNew.html">Sign in</a></li>
-                    <li><a class="cd-signup" href="loginNew.html">Sign up</a></li>
+                    <li><a class="login-overlay" href="index.html">Sign in</a></li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -207,106 +207,58 @@
         </footer>
 
     </div>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to aplikasi</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" id="remember"> Remember login
+                                    </label>
+                                    <p class="help-block">(if this is a private computer)</p>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                        <ul class="list-unstyled" style="line-height: 2">
+                            <li><span class="fa fa-check text-success"></span> See all your orders</li>
+                            <li><span class="fa fa-check text-success"></span> Fast re-order</li>
+                            <li><span class="fa fa-check text-success"></span> Save your favorites</li>
+                            <li><span class="fa fa-check text-success"></span> Fast checkout</li>
+                            <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+                            <li><a href="/read-more/"><u>Read more</u></a></li>
+                        </ul>
+                        <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
-    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
-        <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
-            <ul class="cd-switcher">
-                <li><a href="#0">Sign in</a></li>
-                <li><a href="#0">New account</a></li>
-            </ul>
-
-            <div id="cd-login"> <!-- log in form -->
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-password" for="signin-password">Password</label>
-                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
-                        <a href="#0" class="hide-password">Hide</a>
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input type="checkbox" id="remember-me" checked>
-                        <label for="remember-me">Remember me</label>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="full-width" type="submit" value="Login">
-                    </p>
-                </form>
-
-                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
-                <!-- <a href="#0" class="cd-close-form">Close</a> -->
-            </div> <!-- cd-login -->
-
-            <div id="cd-signup"> <!-- sign up form -->
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-username" for="signup-username">Username</label>
-                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-password" for="signup-password">Password</label>
-                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
-                        <a href="#0" class="hide-password">Hide</a>
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input type="checkbox" id="accept-terms">
-                        <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="full-width has-padding" type="submit" value="Create account">
-                    </p>
-                </form>
-
-                <!-- <a href="#0" class="cd-close-form">Close</a> -->
-            </div> <!-- cd-signup -->
-
-            <div id="cd-reset-password"> <!-- reset password form -->
-                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="full-width has-padding" type="submit" value="Reset password">
-                    </p>
-                </form>
-
-                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-            </div> <!-- cd-reset-password -->
-            <a href="#0" class="cd-close-form">Close</a>
-        </div> <!-- cd-user-modal-container -->
-    </div> <!-- cd-user-modal -->
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/main.js"></script> <!-- Gem jQuery -->
 
 </body>
 
